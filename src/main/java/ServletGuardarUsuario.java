@@ -22,12 +22,7 @@ public class ServletGuardarUsuario extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        SessionFactory factory = HibernateUtilidades.getSessionFactory();
-        Session sesion = factory.openSession();
-        Transaction tranza = sesion.beginTransaction();
-        sesion.save(new Trabajador("raton", "vaquero","cri-cri"));
-        tranza.commit();
-        sesion.close();
+        DAOTrabajadorImpl.guardar(new Trabajador("daniela","guevara","manzano"));
        out.println("Ya se guardo!!");
         }
     }
