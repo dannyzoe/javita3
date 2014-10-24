@@ -14,9 +14,20 @@
         
     </head>
     <body>
-        <h1>Proyecto Nominas</h1>
-        <p>Oprime el sig. boton para ver la nomina</p>
-        <a href="#" class="btn mi-color">Ver nomina</a>
-        <div id="resultado"></div>
+        
+        <div class="row">
+            <div class="col-lg-3">
+                <label> Nombre</label>
+                </div>
+                  <div class="col-lg-3">
+               <input type="text" class="form-control" id="nombre"/>
+           </div>
+        </div>
+        <label> A.paterno</label>
+        <input type="text" class="form-control" id="paterno"/>
+        <label> A.materno</label>
+        <input type="text" class="form-control" id="materno"/>
+        <a id="guardar-trabajador" class="btn btn-default">Guardar Trabajador</a>
+        <div id="resultado-guardar-trabajador"></div>
     </body>
 </html>

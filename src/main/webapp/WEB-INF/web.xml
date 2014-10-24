@@ -5,9 +5,17 @@
         <servlet-name>ServletBuscarHoroscopo</servlet-name>
         <servlet-class>qc.hj.proyecto1.controller.ServletBuscarHoroscopo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletGuardarUsuario</servlet-name>
+        <servlet-class>ServletGuardarUsuario</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletBuscarHoroscopo</servlet-name>
         <url-pattern>/horoscopo.xls</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletGuardarUsuario</servlet-name>
+        <url-pattern>/ServletGuardarUsuario</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
