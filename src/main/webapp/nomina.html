@@ -10,7 +10,24 @@
        <!--Cargamos el estilo de cascada de twitter bootstrap para que se vea bonita la apliacion web!-->
         <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css">
         <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
-        <link rel="stylesheet" href="mi-estilo.css">
+        <script>
+            $(document).ready(function(){
+                $("#guardar-trabajador").click(function(){
+                    $.ajax({
+                        url:'guardar-trabajador',
+                        method: 'post',
+                        data: {
+                           nombre : $("#nombre").val(),
+                             paterno: $("#paterno").val(),
+                              materno: $("#materno").val(),
+                        },
+                        sucess:function(resultado){
+                            $("#resultado-guardar-trabjador").html(resultado);
+                        }
+                    });
+                });
+            });
+        </script>
         
     </head>
     <body>
