@@ -6,11 +6,12 @@
         <meta charset="windows-1252">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/libs/jquery/jquery.js"></script>
-        <script src="js/nomina.js"></script>
+       
        <!--Cargamos el estilo de cascada de twitter bootstrap para que se vea bonita la apliacion web!-->
         <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css">
         <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
-        <script>
+        <script type="text/javascript">
+        
             $(document).ready(function(){
                 $("#guardar-trabajador").click(function(){
                     $.ajax({
@@ -23,6 +24,7 @@
                         },
                         sucess:function(resultado){
                             $("#resultado-guardar-trabjador").html(resultado);
+                            
                         }
                     });
                 });
@@ -31,7 +33,10 @@
         
     </head>
     <body>
-        
+        <!--
+        Aqui tu comentario-->
+        <a id="actualizar-trabajador" class="btn btn-warning"> Actualizar trabajador</a>
+        <div id="resultado-actualizacion"></div>
         <div class="row">
             <div class="col-lg-3">
                 <label> Nombre</label>

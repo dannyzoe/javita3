@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import qc.hj.proyecto1.controller.HibernateUtilidades;
-import qc.hj.proyecto1.controller.Trabajador;
+import qc.ag.proyecto1.controller.HibernateUtilidades;
+import qc.ag.proyecto1.controller.Trabajador;
 
 /**
  *
@@ -22,7 +22,7 @@ public class ServletGuardarUsuario extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        DAOTrabajadorImpl.guardar(new Trabajador("daniela","guevara","manzano"));
+       
        out.println("Ya se guardo!!");
         }
     }

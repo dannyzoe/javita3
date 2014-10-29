@@ -9,6 +9,10 @@
         <servlet-name>ServletGuardarUsuario</servlet-name>
         <servlet-class>ServletGuardarUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletActualizarTrabajador</servlet-name>
+        <servlet-class>ServletActualizarTrabajador</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletBuscarHoroscopo</servlet-name>
         <url-pattern>/horoscopo.xls</url-pattern>
@@ -16,6 +20,10 @@
     <servlet-mapping>
         <servlet-name>ServletGuardarUsuario</servlet-name>
         <url-pattern>/ServletGuardarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletActualizarTrabajador</servlet-name>
+        <url-pattern>/actualizar-trabajador</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
